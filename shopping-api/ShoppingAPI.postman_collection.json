@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "14eb5ece-f977-4f4e-9798-e6c790fc48d2",
+		"name": "ShoppingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21599864"
+	},
+	"item": [
+		{
+			"name": "ShopPost Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"itens\": \r\n    [\r\n        { \r\n            \"price\": 18.00\r\n        },\r\n        { \r\n            \"price\": 9.50\r\n        },\r\n        { \r\n            \"price\": 4.40\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/shopping",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShopGetAll Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shopping",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShopFindId Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shopping/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6757632686c11727ab8cb70c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShopByDate Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shopping/shopByDate?date=2024-12-09T19:37:19.74",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping",
+						"shopByDate"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2024-12-09T19:37:19.74"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShopProductIdentifier Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shopping/getByIdentifier/:productIdentifier",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping",
+						"getByIdentifier",
+						":productIdentifier"
+					],
+					"variable": [
+						{
+							"key": "productIdentifier",
+							"value": "12f62ebb-1424-4971-bea4-99a3d9cb56db"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShopSearchByDates Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shopping/search?inicialDate=2024-12-01&finalDate=2024-12-10&minValue=150.00",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping",
+						"search"
+					],
+					"query": [
+						{
+							"key": "inicialDate",
+							"value": "2024-12-01"
+						},
+						{
+							"key": "finalDate",
+							"value": "2024-12-10"
+						},
+						{
+							"key": "minValue",
+							"value": "150.00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ShopReport Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/shopping/shopping/report?inicialDate=2024-12-01&finalDate=2024-12-10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shopping",
+						"shopping",
+						"report"
+					],
+					"query": [
+						{
+							"key": "inicialDate",
+							"value": "2024-12-01"
+						},
+						{
+							"key": "finalDate",
+							"value": "2024-12-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

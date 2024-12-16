@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "a1a0164d-db62-4960-ae46-cafa5996c30f",
+		"name": "ProductAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21599864"
+	},
+	"item": [
+		{
+			"name": "CategoryPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Smartphone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryGetAll Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/category",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryUpdate Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Atualizou\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/category/6752f35f16303b59026eaa46",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"6752f35f16303b59026eaa46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryDelete Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/category/6752f39916303b59026eaa47",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"6752f39916303b59026eaa47"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CategoryPage Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/category/pageable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"category",
+						"pageable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductPost Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"produto\",\r\n    \"description\": \"produto para deletar\",\r\n    \"price\": 15.99,\r\n    \"categoryId\": \"6752f2e216303b59026eaa45\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductUpdate Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nova cat tem que ser atualizou 2\",\r\n    \"description\": \"produto para atualizar categoria\",\r\n    \"price\": 10.99,\r\n    \"categoryId\": \"6752f35f16303b59026eaa46\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product/6752ff68a8d18f4a53b1e9de",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"6752ff68a8d18f4a53b1e9de"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductGetAll Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductFindById Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/getbyid/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"getbyid",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6752ff68a8d18f4a53b1e9de"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductPage Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/pageable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"pageable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductsByCategory Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/category/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"category",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6752f2a916303b59026eaa44"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductDelete Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6753499b0320c81d275b56f9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProductByIdentifier Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/getidentifier/:productIdentifier",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"getidentifier",
+						":productIdentifier"
+					],
+					"variable": [
+						{
+							"key": "productIdentifier",
+							"value": "9556081b-2f14-440d-af09-c99d2c6ba1f0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
